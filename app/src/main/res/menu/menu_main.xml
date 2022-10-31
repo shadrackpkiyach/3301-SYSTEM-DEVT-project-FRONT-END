@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.revhalisi.churchapp.MainActivity">
+    <item
+        app:showAsAction="always"
+        android:icon="@drawable/verticaltool"
+        android:title="">
+
+        <menu>
+            <item
+
+                android:id="@+id/userHelp"
+                android:orderInCategory="100"
+                android:title="@string/help"
+                app:showAsAction= "never"/>
+
+        </menu>
+
+
+            </item>
+
+</menu>
