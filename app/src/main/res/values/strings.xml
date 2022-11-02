@@ -24,4 +24,6 @@
     <string name="toast_you_just_clicked_a_fragment">changed button toggle</string>
     <string name="get_email_notification_monthly">get Email notification monthly</string>
     <string name="edit">edit</string>
+    <string name="loginFF">LOGIN</string>
+    <string name="login_as">Login As</string>
 </resources>

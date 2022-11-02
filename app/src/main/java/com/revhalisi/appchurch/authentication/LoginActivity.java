@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -27,13 +28,14 @@ import retrofit2.Response;
 
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
   private EditText phoneNumberText ,passwordText;
-  private TextView register;
+  private Spinner spinner;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         phoneNumberText = findViewById(R.id.inputPhoneNumber);
         passwordText = findViewById(R.id.inputPassword);
+        spinner = findViewById(R.id.spinner);
         findViewById(R.id.loginButton).setOnClickListener(this);
         findViewById(R.id.toRegister).setOnClickListener(this);
     }
