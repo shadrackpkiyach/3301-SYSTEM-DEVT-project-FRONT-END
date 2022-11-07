@@ -2,29 +2,15 @@ package com.revhalisi.appchurch;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.Toast;
-
-import java.util.HashMap;
-
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
-import retrofit2.Retrofit;
-import retrofit2.converter.gson.GsonConverterFactory;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.revhalisi.appchurch.api.RetrofitInterface;
-import com.revhalisi.appchurch.authentication.LoginResult2;
 import com.revhalisi.appchurch.calender.CalenderActivity;
 import com.revhalisi.appchurch.profileFraments.AboutFragment;
 import com.revhalisi.appchurch.profileFraments.AccountFragment;
@@ -57,6 +43,7 @@ public class ProfileActivity extends AppCompatActivity {
                     case R.id.profile:
                         startActivity(
                                 new Intent(getApplicationContext(), ProfileActivity.class));
+                        finish();
                         return true;
 
                     case R.id.schedules:
@@ -64,6 +51,7 @@ public class ProfileActivity extends AppCompatActivity {
                                 new Intent(getApplicationContext(), SchedulesActivity.class)
                         );
                         overridePendingTransition(0, 0);
+                        finish();
                         // do something here
                         return true;
                     case R.id.calender:
@@ -71,14 +59,14 @@ public class ProfileActivity extends AppCompatActivity {
                                 new Intent(getApplicationContext(), CalenderActivity.class)
                         );
                         overridePendingTransition(0, 0);
-                        // do something here
+                        finish(); // do something here
                         return true;
                     case R.id.home:
                         startActivity(
                                 new Intent(getApplicationContext(), HomeActivity.class)
                         );
                         overridePendingTransition(0, 0);
-                        // do something here
+                        finish(); // do something here
                         return true;
                     default:
                         return true;

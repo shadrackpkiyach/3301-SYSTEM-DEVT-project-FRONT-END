@@ -76,7 +76,7 @@
                 android:background="@null"
                 android:onClick="nextMonthAction"
                 android:text="@string/forward"
-                android:textColor="@color/blue"
+                android:textColor="@color/green"
                 android:textSize="20sp"
                 android:textStyle="bold"
                 tools:ignore="OnClick" />

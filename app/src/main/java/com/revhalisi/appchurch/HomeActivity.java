@@ -11,6 +11,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
@@ -18,9 +19,11 @@ import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.widget.Toolbar;
 
 import com.android.volley.Request;
 import com.android.volley.toolbox.JsonObjectRequest;
+import com.google.android.material.appbar.AppBarLayout;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.revhalisi.appchurch.api.AuthApi;
@@ -52,17 +55,24 @@ public class HomeActivity extends AppCompatActivity {
    FloatingActionButton floatingActionButton;
    List<PostModels> postModelsList = new ArrayList<>();
    private EditText editPostText;
+   private Button buttonLogout;
+   private MenuItem menuButton;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
+
         progressBar = findViewById(R.id.progressBar);
-        recyclerView =(RecyclerView) findViewById(R.id.homeRecycler) ;
+        recyclerView = findViewById(R.id.homeRecycler) ;
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
-         floatingActionButton = (FloatingActionButton) findViewById(R.id.editPost);
-        //List<PostModels> postModelsList = new ArrayList<PostModels>();
+         floatingActionButton =  findViewById(R.id.editPost);
+
 
         bottomNavigationView.setSelectedItemId(R.id.home);
+
         bottomNavigationView.setOnItemSelectedListener(new BottomNavigationView.OnItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -73,15 +83,18 @@ public class HomeActivity extends AppCompatActivity {
                     case R.id.schedules:
                         startActivity(
                                 new Intent(getApplicationContext(), SchedulesActivity.class)
+
                         );
                         overridePendingTransition(0, 0);
                         // do something here
+                        finish();
                         return true;
                     case R.id.calender:
                         startActivity(
                                 new Intent(getApplicationContext(), CalenderActivity.class)
                         );
                         overridePendingTransition(0, 0);
+                        finish();
                         // do something here
                         return true;
                     case R.id.profile:
@@ -89,6 +102,7 @@ public class HomeActivity extends AppCompatActivity {
                                 new Intent(getApplicationContext(), ProfileActivity.class)
                         );
                         overridePendingTransition(0, 0);
+                        finish();
                         // do something here
                         return true;
                     default:
@@ -116,6 +130,22 @@ public class HomeActivity extends AppCompatActivity {
 
 
     }
+
+    @Override
+    public  boolean onOptionsItemSelected(@NonNull MenuItem item){
+        switch (item.getItemId()){
+            case R.id.logout:
+                startActivity(new Intent(HomeActivity.this,RegisterActivity.class));
+                finish();
+              return true;
+            default:
+                return true;
+        }
+    }
+
+
+
+
 
     private void fetchPosts() {
         RetrofitClient.getInstance().getAuthApi().getPosts().enqueue(new Callback<List<PostModels>>() {

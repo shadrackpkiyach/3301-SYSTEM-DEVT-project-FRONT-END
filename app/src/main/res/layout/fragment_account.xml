@@ -112,23 +112,29 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
             <Button
                 android:layout_width="150dp"
-                android:layout_marginRight="20dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="100dp"
-                android:background="@color/reg"
+                android:layout_marginRight="20dp"
+                android:backgroundTint="@color/reg"
                 android:drawableEnd="@drawable/edit"
                 android:drawablePadding="10dp"
-                android:text="@string/edit" />
+                android:text="@string/edit"
+                android:textColor="#546E7A" />
+
             <Button
+                android:id="@+id/logout"
                 android:layout_width="150dp"
-                android:paddingLeft="0dp"
-                android:background="@color/reg"
-                android:drawableEnd="@drawable/logout"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="100dp"
-                android:text="@string/logout" />
+
+                android:drawableEnd="@drawable/logout"
+                android:paddingLeft="0dp"
+                android:backgroundTint="@color/reg"
+                android:text="@string/logout"
+                android:textColor="#546E7A" />
 
 
 

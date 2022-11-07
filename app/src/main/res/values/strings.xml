@@ -26,4 +26,12 @@
     <string name="edit">edit</string>
     <string name="loginFF">LOGIN</string>
     <string name="login_as">Login As</string>
+    <string-array name="usertype">
+        <item>
+            user
+        </item>
+        <item>
+            admin
+        </item>
+    </string-array>
 </resources>

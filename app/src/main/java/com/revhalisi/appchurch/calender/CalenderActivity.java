@@ -73,21 +73,21 @@ public class CalenderActivity extends AppCompatActivity implements CalendarAdapt
                                 new Intent(getApplicationContext(), SchedulesActivity.class)
                         );
                         overridePendingTransition(0, 0);
-                        // do something here
+                        finish();// do something here
                         return true;
                     case R.id.profile:
                         startActivity(
                                 new Intent(getApplicationContext(), ProfileActivity.class)
                         );
                         overridePendingTransition(0, 0);
-                        // do something here
+                        finish();// do something here
                         return true;
                     case R.id.home:
                         startActivity(
                                 new Intent(getApplicationContext(), HomeActivity.class)
                         );
                         overridePendingTransition(0, 0);
-                        // do something here
+                        finish();// do something here
                         return true;
                     default:
                         return true;

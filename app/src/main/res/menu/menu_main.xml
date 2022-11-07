@@ -4,22 +4,45 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.revhalisi.churchapp.MainActivity">
+
+    <item
+       android:id="@+id/search"
+        app:showAsAction="always"
+        android:icon="@drawable/search"
+        android:title="search"/>
+
+
+
     <item
         app:showAsAction="always"
         android:icon="@drawable/verticaltool"
         android:title="">
 
+
+
+
+
+
         <menu>
+
             <item
 
                 android:id="@+id/userHelp"
                 android:orderInCategory="100"
                 android:title="@string/help"
                 app:showAsAction= "never"/>
+            <item
+
+                android:id="@+id/logout"
+                android:title="@string/logout"
+                app:showAsAction= "never"/>
+
 
         </menu>
 
 
             </item>
+
+
 
 </menu>

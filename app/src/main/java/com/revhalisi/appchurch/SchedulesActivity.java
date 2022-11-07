@@ -32,21 +32,21 @@ public class SchedulesActivity extends AppCompatActivity {
                                 new Intent(getApplicationContext(), ProfileActivity.class)
                         );
                         overridePendingTransition(0, 0);
-                        // do something here
+                        finish(); // do something here
                         return true;
                     case R.id.calender:
                         startActivity(
                                 new Intent(getApplicationContext(), CalenderActivity.class)
                         );
                         overridePendingTransition(0, 0);
-                        // do something here
+                        finish(); // do something here
                         return true;
                     case R.id.home:
                         startActivity(
                                 new Intent(getApplicationContext(), HomeActivity.class)
                         );
                         overridePendingTransition(0, 0);
-                        // do something here
+                        finish();// do something here
                         return true;
                     default:
                         return true;

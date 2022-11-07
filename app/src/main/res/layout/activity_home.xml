@@ -30,7 +30,6 @@
         android:layout_height="wrap_content"
 
 
-
         android:theme="@style/Theme.AppChurch"
         >
 
@@ -40,7 +39,9 @@
             android:layout_height="match_parent"
             android:background="?attr/colorOnPrimary"
             app:menu="@menu/menu_main"
-            app:popupTheme="@style/Theme.AppChurch" />
+            app:popupTheme="@style/Theme.AppChurch">
+
+        </androidx.appcompat.widget.Toolbar>
 
     </com.google.android.material.appbar.AppBarLayout>
 
