@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profileFraments.AccountFragment">
+
+    <LinearLayout
+        android:layout_gravity=""
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <RelativeLayout
+            android:id="@+id/reLaCC"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="@color/reg"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:id="@+id/imageAccount"
+                android:layout_centerVertical="true"
+                android:src="@drawable/profile"/>
+
+            <TextView
+                android:layout_width="205dp"
+                android:layout_height="57dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginEnd="76dp"
+                android:layout_toEndOf="@+id/imageAccount"
+                android:includeFontPadding="false"
+                android:text="shadrack pkiyach"
+                android:textSize="20sp" />
+
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_gravity=""
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:textStyle="italic"
+                android:hint="Full Name"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/profile"
+                android:drawablePadding="10dp"
+                android:textStyle="bold"
+                android:text="Shadrack Pkiyach" />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_gravity=""
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:hint="Phone Number"/>
+            <TextView
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/phone"
+                android:drawablePadding="10dp"
+                android:text="07123456" />
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_gravity=""
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:hint="email address"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/e_email"
+                android:textStyle="bold"
+                android:drawablePadding="10dp"
+                android:text="ShadrackPkiyach@gmail.com" />
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:layout_marginRight="20dp"
+                android:backgroundTint="@color/reg"
+                android:drawableEnd="@drawable/edit"
+                android:drawablePadding="10dp"
+                android:text="@string/edit"
+                android:textColor="#546E7A" />
+
+            <Button
+                android:id="@+id/logout"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+
+                android:drawableEnd="@drawable/logout"
+                android:paddingLeft="0dp"
+                android:backgroundTint="@color/reg"
+                android:text="@string/logout"
+                android:textColor="#546E7A" />
+
+
+
+        </LinearLayout>
+
+
+</LinearLayout>
+
+</FrameLayout>

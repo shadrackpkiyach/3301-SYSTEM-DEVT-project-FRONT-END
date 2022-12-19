@@ -1,0 +1,57 @@
+
+<androidx.core.widget.NestedScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+	<LinearLayout 
+		android:id="@+id/linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+	
+		<include
+            layout="@layout/old_text_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:isScrollContainer="true"
+            android:soundEffectsEnabled="true"
+            android:textAlignment="textStart"/>
+	
+	<GridLayout android:layout_width="match_parent"
+		android:layout_height="match_parent">
+		
+		<include
+            layout="@layout/old_testament_btn_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:clipToPadding="true"
+            android:focusableInTouchMode="true"
+            android:isScrollContainer="true"
+            android:overScrollMode="always"
+            android:saveEnabled="true"
+            android:soundEffectsEnabled="true"/>
+		
+	</GridLayout>
+<include
+    layout="@layout/new_testament_text_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:isScrollContainer="true"
+    android:soundEffectsEnabled="true"
+    android:textAlignment="textStart"/>
+
+<GridLayout
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content">
+	<include
+		layout="@layout/new_testament_btn_layout"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:isScrollContainer="true"
+				android:soundEffectsEnabled="true"
+				android:textAlignment="textStart"/>
+		</GridLayout>
+</LinearLayout>
+</androidx.core.widget.NestedScrollView>

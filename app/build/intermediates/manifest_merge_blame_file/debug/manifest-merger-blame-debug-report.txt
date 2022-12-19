@@ -1,0 +1,542 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.revhalisi.appchurch"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+8-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="32" />
+9-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:6:5-67
+11-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:6:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:7:5-79
+12-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:7:22-76
+13
+14    <application
+14-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:9:5-256:19
+15        android:allowBackup="true"
+15-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:10:9-35
+16        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+16-->[androidx.core:core:1.8.0] C:\Users\user\.gradle\caches\transforms-3\cd33f26b4f6a5be75c2c675ec5e179dc\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
+17        android:dataExtractionRules="@xml/data_extraction_rules"
+17-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:11:9-65
+18        android:debuggable="true"
+19        android:extractNativeLibs="false"
+20        android:fullBackupContent="@xml/backup_rules"
+20-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:12:9-54
+21        android:icon="@mipmap/ic_launcher"
+21-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:13:9-43
+22        android:label="@string/app_name"
+22-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:14:9-41
+23        android:networkSecurityConfig="@xml/network_security_config"
+23-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:15:9-69
+24        android:roundIcon="@mipmap/ic_launcher_round"
+24-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:16:9-54
+25        android:supportsRtl="true"
+25-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:17:9-35
+26        android:testOnly="true"
+27        android:theme="@style/Theme.AppChurch"
+27-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:18:9-47
+28        android:usesCleartextTraffic="true" >
+28-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:19:9-44
+29        <activity
+29-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:21:9-23:40
+30            android:name="com.revhalisi.appchurch.VerificationPage"
+30-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:22:13-45
+31            android:exported="false" />
+31-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:23:13-37
+32        <activity
+32-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:24:9-26:40
+33            android:name="com.revhalisi.appchurch.MainActivity"
+33-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:25:13-41
+34            android:exported="false" />
+34-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:26:13-37
+35        <activity
+35-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:27:9-29:40
+36            android:name="com.revhalisi.appchurch.authentication.RegisterActivity"
+36-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:28:13-60
+37            android:exported="false" />
+37-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:29:13-37
+38        <activity
+38-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:30:9-32:40
+39            android:name="com.revhalisi.appchurch.authentication.LoginActivity"
+39-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:31:13-57
+40            android:exported="false" />
+40-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:32:13-37
+41        <activity
+41-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:33:9-35:40
+42            android:name="com.revhalisi.appchurch.biblePart.MainActivity"
+42-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:34:13-51
+43            android:exported="false" />
+43-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:35:13-37
+44        <activity
+44-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:36:9-38:40
+45            android:name="com.revhalisi.appchurch.biblePart.BookChaptersContent"
+45-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:37:13-58
+46            android:exported="false" />
+46-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:38:13-37
+47        <activity
+47-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:39:9-41:40
+48            android:name="com.revhalisi.appchurch.calender.CalenderActivity"
+48-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:40:13-54
+49            android:exported="false" />
+49-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:41:13-37
+50        <activity
+50-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:42:9-44:40
+51            android:name="com.revhalisi.appchurch.HomeActivity"
+51-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:43:13-41
+52            android:exported="false" />
+52-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:44:13-37
+53        <activity
+53-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:45:9-47:40
+54            android:name="com.revhalisi.appchurch.ProfileActivity"
+54-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:46:13-44
+55            android:exported="false" />
+55-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:47:13-37
+56        <activity
+56-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:48:9-50:43
+57            android:name="com.revhalisi.appchurch.biblePart.Genesis"
+57-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:49:13-46
+58            android:label="@string/Gen" />
+58-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:50:13-40
+59        <activity
+59-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:51:9-53:42
+60            android:name="com.revhalisi.appchurch.biblePart.Amos"
+60-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:52:13-43
+61            android:label="@string/Am" />
+61-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:53:13-39
+62        <activity
+62-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:54:9-56:43
+63            android:name="com.revhalisi.appchurch.biblePart.Daniel"
+63-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:55:13-45
+64            android:label="@string/Dan" />
+64-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:56:13-40
+65        <activity
+65-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:57:9-59:44
+66            android:name="com.revhalisi.appchurch.biblePart.Deuteronomy"
+66-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:58:13-50
+67            android:label="@string/Deut" />
+67-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:59:13-41
+68        <activity
+68-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:60:9-62:49
+69            android:name="com.revhalisi.appchurch.biblePart.Ecclesiastes"
+69-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:61:13-51
+70            android:label="@string/Ecclesias" />
+70-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:62:13-46
+71        <activity
+71-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:63:9-65:44
+72            android:name="com.revhalisi.appchurch.biblePart.Esther"
+72-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:64:13-45
+73            android:label="@string/Esth" />
+73-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:65:13-41
+74        <activity
+74-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:66:9-68:42
+75            android:name="com.revhalisi.appchurch.biblePart.Exodus"
+75-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:67:13-45
+76            android:label="@string/Ex" />
+76-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:68:13-39
+77        <activity
+77-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:69:9-71:44
+78            android:name="com.revhalisi.appchurch.biblePart.Ezekiel"
+78-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:70:13-46
+79            android:label="@string/Ezek" />
+79-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:71:13-41
+80        <activity
+80-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:72:9-74:43
+81            android:name="com.revhalisi.appchurch.biblePart.Ezra"
+81-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:73:13-43
+82            android:label="@string/Ezr" />
+82-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:74:13-40
+83        <activity
+83-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:75:9-77:46
+84            android:name="com.revhalisi.appchurch.biblePart.First_chronicle"
+84-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:76:13-54
+85            android:label="@string/Chron1" />
+85-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:77:13-43
+86        <activity
+86-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:78:9-80:43
+87            android:name="com.revhalisi.appchurch.biblePart.First_king"
+87-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:79:13-49
+88            android:label="@string/Ki1" />
+88-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:80:13-40
+89        <activity
+89-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:81:9-83:44
+90            android:name="com.revhalisi.appchurch.biblePart.First_samuel"
+90-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:82:13-51
+91            android:label="@string/Sam1" />
+91-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:83:13-41
+92        <activity
+92-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:84:9-86:44
+93            android:name="com.revhalisi.appchurch.biblePart.Habbakkuk"
+93-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:85:13-48
+94            android:label="@string/Habb" />
+94-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:86:13-41
+95        <activity
+95-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:87:9-89:43
+96            android:name="com.revhalisi.appchurch.biblePart.Haggai"
+96-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:88:13-45
+97            android:label="@string/Hag" />
+97-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:89:13-40
+98        <activity
+98-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:90:9-92:43
+99            android:name="com.revhalisi.appchurch.biblePart.Hosiah"
+99-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:91:13-45
+100            android:label="@string/Hos" />
+100-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:92:13-40
+101        <activity
+101-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:93:9-95:42
+102            android:name="com.revhalisi.appchurch.biblePart.Isiah"
+102-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:94:13-44
+103            android:label="@string/Is" />
+103-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:95:13-39
+104        <activity
+104-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:96:9-98:43
+105            android:name="com.revhalisi.appchurch.biblePart.Jeremiah"
+105-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:97:13-47
+106            android:label="@string/Jer" />
+106-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:98:13-40
+107        <activity
+107-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:99:9-101:42
+108            android:name="com.revhalisi.appchurch.biblePart.Job"
+108-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:100:13-42
+109            android:label="@string/Jo" />
+109-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:101:13-39
+110        <activity
+110-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:102:9-104:43
+111            android:name="com.revhalisi.appchurch.biblePart.Joel"
+111-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:103:13-43
+112            android:label="@string/Joe" />
+112-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:104:13-40
+113        <activity
+113-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:105:9-107:43
+114            android:name="com.revhalisi.appchurch.biblePart.Jonah"
+114-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:106:13-44
+115            android:label="@string/Jon" />
+115-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:107:13-40
+116        <activity
+116-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:108:9-110:43
+117            android:name="com.revhalisi.appchurch.biblePart.Joshua"
+117-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:109:13-45
+118            android:label="@string/Jos" />
+118-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:110:13-40
+119        <activity
+119-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:111:9-113:43
+120            android:name="com.revhalisi.appchurch.biblePart.Judges"
+120-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:112:13-45
+121            android:label="@string/Jud" />
+121-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:113:13-40
+122        <activity
+122-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:114:9-116:45
+123            android:name="com.revhalisi.appchurch.biblePart.Lamentation"
+123-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:115:13-50
+124            android:label="@string/Lamen" />
+124-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:116:13-42
+125        <activity
+125-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:117:9-119:43
+126            android:name="com.revhalisi.appchurch.biblePart.Malachi"
+126-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:118:13-46
+127            android:label="@string/Mal" />
+127-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:119:13-40
+128        <activity
+128-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:120:9-122:43
+129            android:name="com.revhalisi.appchurch.biblePart.Micah"
+129-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:121:13-44
+130            android:label="@string/Mic" />
+130-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:122:13-40
+131        <activity
+131-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:123:9-125:45
+132            android:name="com.revhalisi.appchurch.biblePart.Nehemiah"
+132-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:124:13-47
+133            android:label="@string/Nehem" />
+133-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:125:13-42
+134        <activity
+134-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:126:9-128:43
+135            android:name="com.revhalisi.appchurch.biblePart.Nahum"
+135-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:127:13-44
+136            android:label="@string/Nah" />
+136-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:128:13-40
+137        <activity
+137-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:129:9-131:44
+138            android:name="com.revhalisi.appchurch.biblePart.Obadiah"
+138-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:130:13-46
+139            android:label="@string/Obad" />
+139-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:131:13-41
+140        <activity
+140-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:132:9-134:44
+141            android:name="com.revhalisi.appchurch.biblePart.Proverbs"
+141-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:133:13-47
+142            android:label="@string/Prov" />
+142-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:134:13-41
+143        <activity
+143-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:135:9-137:42
+144            android:name="com.revhalisi.appchurch.biblePart.Psalm"
+144-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:136:13-44
+145            android:label="@string/Ps" />
+145-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:137:13-39
+146        <activity
+146-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:138:9-140:44
+147            android:name="com.revhalisi.appchurch.biblePart.Zephaniah"
+147-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:139:13-48
+148            android:label="@string/Zeph" />
+148-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:140:13-41
+149        <activity
+149-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:141:9-143:44
+150            android:name="com.revhalisi.appchurch.biblePart.Zechariah"
+150-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:142:13-48
+151            android:label="@string/Zech" />
+151-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:143:13-41
+152        <activity
+152-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:144:9-146:44
+153            android:name="com.revhalisi.appchurch.biblePart.Leviticus"
+153-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:145:13-48
+154            android:label="@string/Levi" />
+154-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:146:13-41
+155        <activity
+155-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:147:9-149:43
+156            android:name="com.revhalisi.appchurch.biblePart.Numbers"
+156-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:148:13-46
+157            android:label="@string/Num" />
+157-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:149:13-40
+158        <activity
+158-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:150:9-152:43
+159            android:name="com.revhalisi.appchurch.biblePart.Second_king"
+159-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:151:13-50
+160            android:label="@string/Ki2" />
+160-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:152:13-40
+161        <activity
+161-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:153:9-155:46
+162            android:name="com.revhalisi.appchurch.biblePart.Second_chronicle"
+162-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:154:13-55
+163            android:label="@string/Chron2" />
+163-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:155:13-43
+164        <activity
+164-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:156:9-158:44
+165            android:name="com.revhalisi.appchurch.biblePart.Second_samuel"
+165-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:157:13-52
+166            android:label="@string/Sam2" />
+166-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:158:13-41
+167        <activity
+167-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:159:9-161:42
+168            android:name="com.revhalisi.appchurch.biblePart.Ruth"
+168-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:160:13-43
+169            android:label="@string/Ru" />
+169-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:161:13-39
+170        <activity
+170-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:162:9-164:43
+171            android:name="com.revhalisi.appchurch.biblePart.Solomon"
+171-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:163:13-46
+172            android:label="@string/Sol" />
+172-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:164:13-40
+173        <activity
+173-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:165:9-167:43
+174            android:name="com.revhalisi.appchurch.biblePart.MathewChapters"
+174-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:166:13-53
+175            android:label="@string/mat" />
+175-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:167:13-40
+176        <activity
+176-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:168:9-170:43
+177            android:name="com.revhalisi.appchurch.biblePart.MarkChapters"
+177-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:169:13-51
+178            android:label="@string/mar" />
+178-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:170:13-40
+179        <activity
+179-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:171:9-173:43
+180            android:name="com.revhalisi.appchurch.biblePart.LukeChapters"
+180-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:172:13-51
+181            android:label="@string/luk" />
+181-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:173:13-40
+182        <activity
+182-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:174:9-176:43
+183            android:name="com.revhalisi.appchurch.biblePart.JohnChapters"
+183-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:175:13-51
+184            android:label="@string/joh" />
+184-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:176:13-40
+185        <activity
+185-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:177:9-179:43
+186            android:name="com.revhalisi.appchurch.biblePart.ActsChapters"
+186-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:178:13-51
+187            android:label="@string/act" />
+187-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:179:13-40
+188        <activity
+188-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:180:9-182:43
+189            android:name="com.revhalisi.appchurch.biblePart.RomansChapters"
+189-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:181:13-53
+190            android:label="@string/rom" />
+190-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:182:13-40
+191        <activity
+191-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:183:9-185:49
+192            android:name="com.revhalisi.appchurch.biblePart.Frst_CorrenthiansChapter"
+192-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:184:13-63
+193            android:label="@string/correnth1" />
+193-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:185:13-46
+194        <activity
+194-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:186:9-188:49
+195            android:name="com.revhalisi.appchurch.biblePart.Second_CorrenthiansChapter"
+195-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:187:13-65
+196            android:label="@string/correnth2" />
+196-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:188:13-46
+197        <activity
+197-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:189:9-191:43
+198            android:name="com.revhalisi.appchurch.biblePart.Galatians"
+198-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:190:13-48
+199            android:label="@string/gal" />
+199-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:191:13-40
+200        <activity
+200-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:192:9-194:43
+201            android:name="com.revhalisi.appchurch.biblePart.Ephesians"
+201-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:193:13-48
+202            android:label="@string/eph" />
+202-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:194:13-40
+203        <activity
+203-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:195:9-197:44
+204            android:name="com.revhalisi.appchurch.biblePart.Philippians"
+204-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:196:13-50
+205            android:label="@string/phil" />
+205-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:197:13-41
+206        <activity
+206-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:198:9-200:43
+207            android:name="com.revhalisi.appchurch.biblePart.Collosians"
+207-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:199:13-49
+208            android:label="@string/col" />
+208-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:200:13-40
+209        <activity
+209-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:201:9-203:46
+210            android:name="com.revhalisi.appchurch.biblePart.First_thessalonian"
+210-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:202:13-57
+211            android:label="@string/thess1" />
+211-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:203:13-43
+212        <activity
+212-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:204:9-206:46
+213            android:name="com.revhalisi.appchurch.biblePart.Second_thessalonian"
+213-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:205:13-58
+214            android:label="@string/thess2" />
+214-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:206:13-43
+215        <activity
+215-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:207:9-209:44
+216            android:name="com.revhalisi.appchurch.biblePart.First_timothy"
+216-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:208:13-52
+217            android:label="@string/tim1" />
+217-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:209:13-41
+218        <activity
+218-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:210:9-212:44
+219            android:name="com.revhalisi.appchurch.biblePart.SecondTimothy"
+219-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:211:13-52
+220            android:label="@string/tim2" />
+220-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:212:13-41
+221        <activity
+221-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:213:9-215:43
+222            android:name="com.revhalisi.appchurch.biblePart.Titus"
+222-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:214:13-44
+223            android:label="@string/tit" />
+223-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:215:13-40
+224        <activity
+224-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:216:9-218:45
+225            android:name="com.revhalisi.appchurch.biblePart.Philemon"
+225-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:217:13-47
+226            android:label="@string/phile" />
+226-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:218:13-42
+227        <activity
+227-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:219:9-221:43
+228            android:name="com.revhalisi.appchurch.biblePart.Hebrews"
+228-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:220:13-46
+229            android:label="@string/heb" />
+229-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:221:13-40
+230        <activity
+230-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:222:9-224:43
+231            android:name="com.revhalisi.appchurch.biblePart.James"
+231-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:223:13-44
+232            android:label="@string/jam" />
+232-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:224:13-40
+233        <activity
+233-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:225:9-227:44
+234            android:name="com.revhalisi.appchurch.biblePart.First_Peter"
+234-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:226:13-50
+235            android:label="@string/pet1" />
+235-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:227:13-41
+236        <activity
+236-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:228:9-230:44
+237            android:name="com.revhalisi.appchurch.biblePart.Second_Peter"
+237-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:229:13-51
+238            android:label="@string/pet2" />
+238-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:230:13-41
+239        <activity
+239-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:231:9-233:44
+240            android:name="com.revhalisi.appchurch.biblePart.FirstJohn"
+240-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:232:13-48
+241            android:label="@string/joh1" />
+241-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:233:13-41
+242        <activity
+242-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:234:9-236:44
+243            android:name="com.revhalisi.appchurch.biblePart.SecondJohn"
+243-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:235:13-49
+244            android:label="@string/joh2" />
+244-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:236:13-41
+245        <activity
+245-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:237:9-239:44
+246            android:name="com.revhalisi.appchurch.biblePart.ThirdJohn"
+246-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:238:13-48
+247            android:label="@string/joh3" />
+247-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:239:13-41
+248        <activity
+248-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:240:9-242:43
+249            android:name="com.revhalisi.appchurch.biblePart.Jude"
+249-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:241:13-43
+250            android:label="@string/jud" />
+250-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:242:13-40
+251        <activity
+251-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:243:9-245:43
+252            android:name="com.revhalisi.appchurch.biblePart.Revelation"
+252-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:244:13-49
+253            android:label="@string/rev" />
+253-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:245:13-40
+254        <activity
+254-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:246:9-254:20
+255            android:name="com.revhalisi.appchurch.authentication.SplashActivity"
+255-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:247:13-58
+256            android:exported="true" >
+256-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:248:13-36
+257            <intent-filter>
+257-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:249:13-253:29
+258                <action android:name="android.intent.action.MAIN" />
+258-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:250:17-69
+258-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:250:25-66
+259
+260                <category android:name="android.intent.category.LAUNCHER" />
+260-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:252:17-77
+260-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:252:27-74
+261            </intent-filter>
+262        </activity>
+263
+264        <receiver android:name="com.revhalisi.appchurch.api.broadcasterManager" />
+264-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:255:9-59
+264-->C:\androidStudio\Sentu\app\src\main\AndroidManifest.xml:255:19-57
+265
+266        <provider
+266-->[androidx.emoji2:emoji2:1.2.0] C:\Users\user\.gradle\caches\transforms-3\112a099502228b2b317b1c79d5f085b0\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+267            android:name="androidx.startup.InitializationProvider"
+267-->[androidx.emoji2:emoji2:1.2.0] C:\Users\user\.gradle\caches\transforms-3\112a099502228b2b317b1c79d5f085b0\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+268            android:authorities="com.revhalisi.appchurch.androidx-startup"
+268-->[androidx.emoji2:emoji2:1.2.0] C:\Users\user\.gradle\caches\transforms-3\112a099502228b2b317b1c79d5f085b0\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+269            android:exported="false" >
+269-->[androidx.emoji2:emoji2:1.2.0] C:\Users\user\.gradle\caches\transforms-3\112a099502228b2b317b1c79d5f085b0\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+270            <meta-data
+270-->[androidx.emoji2:emoji2:1.2.0] C:\Users\user\.gradle\caches\transforms-3\112a099502228b2b317b1c79d5f085b0\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+271                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+271-->[androidx.emoji2:emoji2:1.2.0] C:\Users\user\.gradle\caches\transforms-3\112a099502228b2b317b1c79d5f085b0\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+272                android:value="androidx.startup" />
+272-->[androidx.emoji2:emoji2:1.2.0] C:\Users\user\.gradle\caches\transforms-3\112a099502228b2b317b1c79d5f085b0\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+273            <meta-data
+273-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\user\.gradle\caches\transforms-3\7cfe2704946b18bb678666b3953b74c4\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+274                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+274-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\user\.gradle\caches\transforms-3\7cfe2704946b18bb678666b3953b74c4\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+275                android:value="androidx.startup" />
+275-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\user\.gradle\caches\transforms-3\7cfe2704946b18bb678666b3953b74c4\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+276        </provider>
+277    </application>
+278
+279</manifest>
