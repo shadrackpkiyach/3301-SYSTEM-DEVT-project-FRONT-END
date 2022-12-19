@@ -51,6 +51,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         ArrayAdapter <CharSequence> adapter =ArrayAdapter.createFromResource(this,
                 R.array.usertype, androidx.appcompat.R.layout.support_simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
+        phoneNumberText.setText("+254");
 
 
 
@@ -91,6 +92,10 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                     Toast.makeText(LoginActivity.this, "Wrong Credentials",
                             Toast.LENGTH_LONG).show();
                 }
+                else if (response.code() == 401) {
+                    Toast.makeText(LoginActivity.this, "not yet verified user",
+                            Toast.LENGTH_LONG).show();
+                }
 
             }
 
@@ -114,7 +119,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     }
 
     private  void ToRegistration(){
-        startActivity(new Intent(LoginActivity.this,RegisterActivity.class));
+        startActivity(new Intent(LoginActivity.this, RegisterActivity.class));
     }
 
     @Override

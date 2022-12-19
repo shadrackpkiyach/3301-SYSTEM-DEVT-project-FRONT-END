@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.revhalisi.churchapp.MainActivity">
 
@@ -9,7 +9,8 @@
        android:id="@+id/search"
         app:showAsAction="always"
         android:icon="@drawable/search"
-        android:title="search"/>
+        android:title="search"
+        />
 
 
 

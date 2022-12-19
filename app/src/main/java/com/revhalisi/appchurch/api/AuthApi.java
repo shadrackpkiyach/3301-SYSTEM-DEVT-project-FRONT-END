@@ -1,7 +1,9 @@
 package com.revhalisi.appchurch.api;
 
 import com.revhalisi.appchurch.api.models.LoginResult;
+import com.revhalisi.appchurch.api.models.MembersModels;
 import com.revhalisi.appchurch.api.models.PostModels;
+import com.revhalisi.appchurch.api.models.User;
 
 import java.util.HashMap;
 import java.util.List;
@@ -10,6 +12,7 @@ import retrofit2.Call;
 import retrofit2.http.Body;
 import retrofit2.http.GET;
 import retrofit2.http.POST;
+import retrofit2.http.Query;
 
 public interface AuthApi {
 
@@ -25,4 +28,12 @@ public interface AuthApi {
     @GET("/postInformation")
     Call<List<PostModels>>getPosts();
 
+    @GET("/postMembers")
+    Call<List<MembersModels>>getMembers();
+
+     @GET("/postProfileData")
+    Call<User>getUser();
+
+    @POST("/verifyUser")
+    Call<Void> veryfyPhone (@Body HashMap<String, String> map);
 }

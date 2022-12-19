@@ -15,4 +15,11 @@
     <color name="blue">#0000FF</color>
     <color name="bluMine">#59EFCC</color>
 
+    <color name="colorPrimary">#CC9966</color>
+    <color name="colorPrimaryDark">#33FFFF</color>
+    <color name="blk">#000033</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="cyan">#99CCFF</color>
+    <color name="buttonBg">#356690</color>
+
 </resources>

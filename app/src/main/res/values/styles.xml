@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	
+    <style name="AppTheme" parent="@android:style/Theme.Material.Light">
+		<item name="colorPrimary">#2E7D32</item>
+        <item name="colorPrimaryDark">#1B5E20</item>
+        <item name="colorAccent">#43A047</item>
+	</style>
+	
+	<style name="ToolbarTheme" parent="@android:style/Theme.Holo.Light">
+		<item name="colorPrimary">#2E7D32</item>
+        <item name="colorPrimaryDark">#1B5E20</item>
+        <item name="colorAccent">#43A047</item>
+	</style>
+	
+	
+	<style name="AppCompatTheme" parent="Theme.AppCompat.Light.NoActionBar">
+		<item name="colorPrimary">#2E7D32</item>
+        <item name="colorPrimaryDark">#1B5E20</item>
+        <item name="colorAccent">#43A047</item>
+	</style>
+</resources>

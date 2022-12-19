@@ -6,12 +6,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.content.DialogInterface;
+
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.LayoutInflater;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
@@ -19,23 +16,14 @@ import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
-import android.widget.Toolbar;
 
-import com.android.volley.Request;
-import com.android.volley.toolbox.JsonObjectRequest;
-import com.google.android.material.appbar.AppBarLayout;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.revhalisi.appchurch.api.AuthApi;
 import com.revhalisi.appchurch.api.RetrofitClient;
-import com.revhalisi.appchurch.api.models.LoginResult;
 import com.revhalisi.appchurch.api.models.PostModels;
-import com.revhalisi.appchurch.api.models.User;
-import com.revhalisi.appchurch.authentication.LoginActivity;
 import com.revhalisi.appchurch.authentication.RegisterActivity;
+import com.revhalisi.appchurch.biblePart.MainActivity;
 import com.revhalisi.appchurch.calender.CalenderActivity;
-
-import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -44,8 +32,6 @@ import java.util.List;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
-import retrofit2.Retrofit;
-import retrofit2.converter.gson.GsonConverterFactory;
 
 public class HomeActivity extends AppCompatActivity {
      RecyclerView recyclerView;
@@ -64,7 +50,7 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-
+        reminderNotification();
         progressBar = findViewById(R.id.progressBar);
         recyclerView = findViewById(R.id.homeRecycler) ;
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
@@ -82,7 +68,7 @@ public class HomeActivity extends AppCompatActivity {
 
                     case R.id.schedules:
                         startActivity(
-                                new Intent(getApplicationContext(), SchedulesActivity.class)
+                                new Intent(getApplicationContext(), MainActivity.class)
 
                         );
                         overridePendingTransition(0, 0);
@@ -168,6 +154,15 @@ postModelsList.addAll(response.body());
             }
         });
     }
+    public void reminderNotification()
+    {
+        Notification _notificationUtils = new Notification(this);
+        long _currentTime = System.currentTimeMillis();
+        long tenSeconds = 1000 * 10;
+        long _triggerReminder = _currentTime + tenSeconds; //triggers a reminder after 10 seconds.
+        _notificationUtils.setReminder(_triggerReminder);
+    }
+
 
 
     private void showEditPostDialog() {

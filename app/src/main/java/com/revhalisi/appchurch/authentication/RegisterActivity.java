@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -11,6 +13,7 @@ import android.widget.Toast;
 
 import com.revhalisi.appchurch.ProfileActivity;
 import com.revhalisi.appchurch.R;
+import com.revhalisi.appchurch.VerificationPage;
 import com.revhalisi.appchurch.api.RetrofitClient;
 
 import java.io.IOException;
@@ -23,8 +26,8 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 public class RegisterActivity extends AppCompatActivity implements View.OnClickListener {
-     private EditText nameText , phoneNumberText ,emailAddressText, passwordText , confirmPassword;
-
+     public EditText nameText , phoneNumberText ,emailAddressText, passwordText , confirmPassword;
+    String codeNumber = "+254";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +42,37 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
         confirmPassword = findViewById(R.id.inputCRPassword);
         findViewById(R.id.RegisterButton).setOnClickListener(this);
          findViewById(R.id.toLogin).setOnClickListener(this);
+
+        phoneNumberText.setText("+254");
+
+        String phoneNo = phoneNumberText.getText().toString();
+        phoneNumberText.addTextChangedListener(new TextWatcher() {
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                // check if the phone number starts with the code number
+                if (!s.toString().startsWith(codeNumber)) {
+                    // the phone number does not start with the code number, so display an error
+                    phoneNumberText.setError("Phone number must start with " + codeNumber);
+                }
+            }
+
+            // other methods of the TextWatcher interface, which you can leave empty
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {}
+            @Override
+            public void afterTextChanged(Editable s) {
+
+                int count = s.length();
+                if (count < 13) {
+                    phoneNumberText.setError("incomplete Phone number " ); // Show an error message indicating that the count is too low
+                } else if (count > 13) {
+                    phoneNumberText.setError("exceeds the required Phone number " ); // Show an error message indicating that the count is too high
+                }
+            }
+        });
+
+
     }
 
     private void RegisterUser(){
@@ -47,6 +81,9 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
         map.put("email", emailAddressText.getText().toString());
         map.put("phoneNumber", phoneNumberText.getText().toString());
         map.put("password", passwordText.getText().toString());
+
+
+        Intent intent = new Intent(RegisterActivity.this, VerificationPage.class);
 
         Call<Void> call = RetrofitClient
                 .getInstance()
@@ -59,7 +96,8 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
                    if (response.code() == 200) {
                        Toast.makeText(RegisterActivity.this,
                                "Signed up successfully  you can log in ", Toast.LENGTH_LONG).show();
-                       startActivity(new Intent(RegisterActivity.this,LoginActivity.class));
+                       intent.putExtra("phoneNumber", phoneNumberText.getText().toString());
+                       startActivity(intent);
                    } else if (response.code() == 400) {
                        Toast.makeText(RegisterActivity.this,
                                "Already registered", Toast.LENGTH_LONG).show();
@@ -90,4 +128,11 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
 
                 break;
         }}
+
+
+
+
+
+
 }
+

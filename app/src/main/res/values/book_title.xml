@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="txt">text</string>
+    <string name="verses">Verses</string>
+        <!--OLD TESTAMENT-->
+        <string name="Genesis">Gen</string>
+        <string name="Exodus">Exo</string>
+        <string name="Leviticus">Lev</string>
+        <string name="Numbers">Num</string>
+        <string name="Deuteronomy">Deut</string>
+        <string name="Joshua">Jos</string>
+        <string name="Judges">Jgs</string>
+        <string name="Ruth">Ruth</string>
+        <string name="Samuel1">1Sam</string>
+        <string name="Samuel2">2Sam</string>
+        <string name="King1">1King</string>
+        <string name="King2">2King</string>
+        <string name="Chronicle1">1Chr</string>
+        <string name="Chronicle2">2Chr</string>
+        <string name="Ezra">Ezr</string>
+        <string name="Nehemiah">Neh</string>
+        <string name="Esther">Est</string>
+        <string name="Job">Job</string>
+        <string name="Psalm">Psal</string>
+        <string name="Proverbs">Prov</string>
+        <string name="Ecclesiastes">Ecc</string>
+        <string name="Solomon">Sol</string>
+        <string name="Isiah">Isa</string>
+        <string name="Jeremiah">Jer</string>
+        <string name="Lamentation">Lam</string>
+        <string name="Ezekiel">Eze</string>
+        <string name="Daniel">Dan</string>
+        <string name="Hosiah">Hos</string>
+        <string name="Joel">Joel</string>
+        <string name="Amos">Amos</string>
+        <string name="Obadiah">Obad</string>
+        <string name="Jonah">Jon</string>
+        <string name="Micah">Mic</string>
+        <string name="Nahum">Nah</string>
+        <string name="Habbakkuk">Hab</string>
+        <string name="Zephaniah">Zeph</string>
+        <string name="Haggai">Hag</string>
+        <string name="Zechariah">Zech</string>
+        <string name="Malachi">Mal</string>
+
+
+        <!-- NEW TESTAMENT-->
+        <string name="mathew">Matt</string>
+        <string name="mark">Mark</string>
+        <string name="luke">Luke</string>
+        <string name="john">John</string>
+        <string name="acts">Acts</string>
+        <string name="romans">Rom</string>
+        <string name="correnthian1">1Cor</string>
+        <string name="correnthian2">2Cor</string>
+        <string name="galatians">Gal</string>
+        <string name="ephesian">Eph</string>
+        <string name="philippians">Phi</string>
+        <string name="collosian">Col</string>
+        <string name="thessalonians1">1Thess</string>
+        <string name="thessalonians2">2Thess</string>
+        <string name="timothy1">1Tim</string>
+        <string name="timothy2">2Tim</string>
+        <string name="titus">Titus</string>
+        <string name="philemon">Phil</string>
+        <string name="hebrews">Heb</string>
+        <string name="james">James</string>
+        <string name="peter1">1Peter</string>
+        <string name="peter2">2Peter</string>
+        <string name="john1">1John</string>
+        <string name="john2">2John</string>
+        <string name="john3">3John</string>
+        <string name="jude">Jude</string>
+        <string name="revelation">Rev</string>
+   
+
+</resources>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.revhalisi.appchurch" >
+    package="com.revhalisi.appchurch">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -12,12 +12,15 @@
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppChurch"
         android:usesCleartextTraffic="true"
-    android:networkSecurityConfig="@xml/network_security_config"
-        tools:targetApi="31" >
+        tools:targetApi="31">
+        <activity
+            android:name=".VerificationPage"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="false" />
@@ -28,7 +31,10 @@
             android:name=".authentication.LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".SchedulesActivity"
+            android:name=".biblePart.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".biblePart.BookChaptersContent"
             android:exported="false" />
         <activity
             android:name=".calender.CalenderActivity"
@@ -40,14 +46,213 @@
             android:name=".ProfileActivity"
             android:exported="false" />
         <activity
+            android:name=".biblePart.Genesis"
+            android:label="@string/Gen" />
+        <activity
+            android:name=".biblePart.Amos"
+            android:label="@string/Am" />
+        <activity
+            android:name=".biblePart.Daniel"
+            android:label="@string/Dan" />
+        <activity
+            android:name=".biblePart.Deuteronomy"
+            android:label="@string/Deut" />
+        <activity
+            android:name=".biblePart.Ecclesiastes"
+            android:label="@string/Ecclesias" />
+        <activity
+            android:name=".biblePart.Esther"
+            android:label="@string/Esth" />
+        <activity
+            android:name=".biblePart.Exodus"
+            android:label="@string/Ex" />
+        <activity
+            android:name=".biblePart.Ezekiel"
+            android:label="@string/Ezek" />
+        <activity
+            android:name=".biblePart.Ezra"
+            android:label="@string/Ezr" />
+        <activity
+            android:name=".biblePart.First_chronicle"
+            android:label="@string/Chron1" />
+        <activity
+            android:name=".biblePart.First_king"
+            android:label="@string/Ki1" />
+        <activity
+            android:name=".biblePart.First_samuel"
+            android:label="@string/Sam1" />
+        <activity
+            android:name=".biblePart.Habbakkuk"
+            android:label="@string/Habb" />
+        <activity
+            android:name=".biblePart.Haggai"
+            android:label="@string/Hag" />
+        <activity
+            android:name=".biblePart.Hosiah"
+            android:label="@string/Hos" />
+        <activity
+            android:name=".biblePart.Isiah"
+            android:label="@string/Is" />
+        <activity
+            android:name=".biblePart.Jeremiah"
+            android:label="@string/Jer" />
+        <activity
+            android:name=".biblePart.Job"
+            android:label="@string/Jo" />
+        <activity
+            android:name=".biblePart.Joel"
+            android:label="@string/Joe" />
+        <activity
+            android:name=".biblePart.Jonah"
+            android:label="@string/Jon" />
+        <activity
+            android:name=".biblePart.Joshua"
+            android:label="@string/Jos" />
+        <activity
+            android:name=".biblePart.Judges"
+            android:label="@string/Jud" />
+        <activity
+            android:name=".biblePart.Lamentation"
+            android:label="@string/Lamen" />
+        <activity
+            android:name=".biblePart.Malachi"
+            android:label="@string/Mal" />
+        <activity
+            android:name=".biblePart.Micah"
+            android:label="@string/Mic" />
+        <activity
+            android:name=".biblePart.Nehemiah"
+            android:label="@string/Nehem" />
+        <activity
+            android:name=".biblePart.Nahum"
+            android:label="@string/Nah" />
+        <activity
+            android:name=".biblePart.Obadiah"
+            android:label="@string/Obad" />
+        <activity
+            android:name=".biblePart.Proverbs"
+            android:label="@string/Prov" />
+        <activity
+            android:name=".biblePart.Psalm"
+            android:label="@string/Ps" />
+        <activity
+            android:name=".biblePart.Zephaniah"
+            android:label="@string/Zeph" />
+        <activity
+            android:name=".biblePart.Zechariah"
+            android:label="@string/Zech" />
+        <activity
+            android:name=".biblePart.Leviticus"
+            android:label="@string/Levi" />
+        <activity
+            android:name=".biblePart.Numbers"
+            android:label="@string/Num" />
+        <activity
+            android:name=".biblePart.Second_king"
+            android:label="@string/Ki2" />
+        <activity
+            android:name=".biblePart.Second_chronicle"
+            android:label="@string/Chron2" />
+        <activity
+            android:name=".biblePart.Second_samuel"
+            android:label="@string/Sam2" />
+        <activity
+            android:name=".biblePart.Ruth"
+            android:label="@string/Ru" />
+        <activity
+            android:name=".biblePart.Solomon"
+            android:label="@string/Sol" />
+        <activity
+            android:name=".biblePart.MathewChapters"
+            android:label="@string/mat" />
+        <activity
+            android:name=".biblePart.MarkChapters"
+            android:label="@string/mar" />
+        <activity
+            android:name=".biblePart.LukeChapters"
+            android:label="@string/luk" />
+        <activity
+            android:name=".biblePart.JohnChapters"
+            android:label="@string/joh" />
+        <activity
+            android:name=".biblePart.ActsChapters"
+            android:label="@string/act" />
+        <activity
+            android:name=".biblePart.RomansChapters"
+            android:label="@string/rom" />
+        <activity
+            android:name=".biblePart.Frst_CorrenthiansChapter"
+            android:label="@string/correnth1" />
+        <activity
+            android:name=".biblePart.Second_CorrenthiansChapter"
+            android:label="@string/correnth2" />
+        <activity
+            android:name=".biblePart.Galatians"
+            android:label="@string/gal" />
+        <activity
+            android:name=".biblePart.Ephesians"
+            android:label="@string/eph" />
+        <activity
+            android:name=".biblePart.Philippians"
+            android:label="@string/phil" />
+        <activity
+            android:name=".biblePart.Collosians"
+            android:label="@string/col" />
+        <activity
+            android:name=".biblePart.First_thessalonian"
+            android:label="@string/thess1" />
+        <activity
+            android:name=".biblePart.Second_thessalonian"
+            android:label="@string/thess2" />
+        <activity
+            android:name=".biblePart.First_timothy"
+            android:label="@string/tim1" />
+        <activity
+            android:name=".biblePart.SecondTimothy"
+            android:label="@string/tim2" />
+        <activity
+            android:name=".biblePart.Titus"
+            android:label="@string/tit" />
+        <activity
+            android:name=".biblePart.Philemon"
+            android:label="@string/phile" />
+        <activity
+            android:name=".biblePart.Hebrews"
+            android:label="@string/heb" />
+        <activity
+            android:name=".biblePart.James"
+            android:label="@string/jam" />
+        <activity
+            android:name=".biblePart.First_Peter"
+            android:label="@string/pet1" />
+        <activity
+            android:name=".biblePart.Second_Peter"
+            android:label="@string/pet2" />
+        <activity
+            android:name=".biblePart.FirstJohn"
+            android:label="@string/joh1" />
+        <activity
+            android:name=".biblePart.SecondJohn"
+            android:label="@string/joh2" />
+        <activity
+            android:name=".biblePart.ThirdJohn"
+            android:label="@string/joh3" />
+        <activity
+            android:name=".biblePart.Jude"
+            android:label="@string/jud" />
+        <activity
+            android:name=".biblePart.Revelation"
+            android:label="@string/rev" />
+        <activity
             android:name=".authentication.SplashActivity"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <receiver android:name=".api.broadcasterManager"/>
     </application>
 
 </manifest>

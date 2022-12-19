@@ -18,11 +18,9 @@ public class CalenderActivity extends AppCompatActivity {
     }
 }*/
 
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
@@ -31,8 +29,7 @@ import android.widget.Toast;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.revhalisi.appchurch.HomeActivity;
 import com.revhalisi.appchurch.ProfileActivity;
-import com.revhalisi.appchurch.SchedulesActivity;
-import com.revhalisi.appchurch.calender.CalendarAdapter;
+import com.revhalisi.appchurch.biblePart.MainActivity;
 import com.revhalisi.appchurch.R;
 
 import java.time.LocalDate;
@@ -70,7 +67,7 @@ public class CalenderActivity extends AppCompatActivity implements CalendarAdapt
 
                     case R.id.schedules:
                         startActivity(
-                                new Intent(getApplicationContext(), SchedulesActivity.class)
+                                new Intent(getApplicationContext(), MainActivity.class)
                         );
                         overridePendingTransition(0, 0);
                         finish();// do something here

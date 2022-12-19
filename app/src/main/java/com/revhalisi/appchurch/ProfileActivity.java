@@ -11,6 +11,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.revhalisi.appchurch.biblePart.MainActivity;
 import com.revhalisi.appchurch.calender.CalenderActivity;
 import com.revhalisi.appchurch.profileFraments.AboutFragment;
 import com.revhalisi.appchurch.profileFraments.AccountFragment;
@@ -48,7 +49,7 @@ public class ProfileActivity extends AppCompatActivity {
 
                     case R.id.schedules:
                         startActivity(
-                                new Intent(getApplicationContext(), SchedulesActivity.class)
+                                new Intent(getApplicationContext(), MainActivity.class)
                         );
                         overridePendingTransition(0, 0);
                         finish();
